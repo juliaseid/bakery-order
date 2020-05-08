@@ -15,7 +15,7 @@ namespace Bakery
       int pastryQuantity = int.Parse(Console.ReadLine());
       Pastry pastryBuy = new Pastry(pastryQuantity);
       int pastryTotal = pastryBuy.Order();
-      int orderTotal = breadTotal + pastryTotal;
+      int orderTotal = breadTotal ;
       Console.WriteLine("For " + breadBuy.Quantity + " loaves of bread and " + pastryBuy.Quantity + " pastries, your total is $" + orderTotal + ". Enjoy, and come back soon!");
 
     }
