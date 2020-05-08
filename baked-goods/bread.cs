@@ -4,17 +4,22 @@ namespace Bakery.Items
 {
   public class Bread
   {
-    public int Quantity {get; set; }
-  
+    public int Quantity {get; set;}
 
     public Bread(int quantity)
     {
       Quantity = quantity;
-      freeLoaves = quantity/3 + 1;
+      freeLoaves = quantity/3;
     }
 
     private static int price = 5;
     private int freeLoaves;
+
+    public void AddLoaves(int loaves)
+    {
+      Quantity = Quantity + loaves;
+      freeLoaves = Quantity/3;
+    }
 
     public int Order()
     {
@@ -35,7 +40,7 @@ namespace Bakery.Items
           if (Console.ReadLine()=="yes")
           {
             Console.WriteLine("You got it! One more loaf added!");
-            Quantity ++;
+            AddLoaves(1);
           }
           else if (Console.ReadLine()=="no")
           {
@@ -48,7 +53,7 @@ namespace Bakery.Items
           if (Console.ReadLine()=="yes") 
           {
             Console.WriteLine("Great! We'll add 2 loaves to your order, but you'll only be charged for one!");
-            Quantity ++;
+            AddLoaves(2);
           }
           else if (Console.ReadLine()=="no")
           {
@@ -60,6 +65,7 @@ namespace Bakery.Items
             if (Console.ReadLine()=="yes")
             {
               Console.WriteLine("Great!  We'll add 2 loaves to your order, but you'll only be charged for one!");
+              AddLoaves(2);
             }
             else
             {
