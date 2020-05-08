@@ -1,0 +1,12 @@
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.csprojAssemblyReference.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.csproj.CoreCompileInputs.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.AssemblyInfoInputs.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.AssemblyInfo.cs
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/bin/Debug/netcoreapp2.2/bakery-site.deps.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/bin/Debug/netcoreapp2.2/bakery-site.runtimeconfig.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/bin/Debug/netcoreapp2.2/bakery-site.runtimeconfig.dev.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/bin/Debug/netcoreapp2.2/bakery-site.dll
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/bin/Debug/netcoreapp2.2/bakery-site.pdb
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.dll
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.pdb
+/Users/juliaseidman/Documents/Epicodus/Week_8/bakery-site/obj/Debug/netcoreapp2.2/bakery-site.genruntimeconfig.cache
