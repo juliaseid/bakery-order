@@ -18,7 +18,11 @@ namespace Bakery.Items
 
     public int Order()
     {
-      if (Quantity % 3 == 0)
+      if (Quantity == 0)
+      {
+        Console.WriteLine("Ok, no bread! On to the pastries!");
+      }
+      else if (Quantity % 3 == 0)
       {
         Console.WriteLine("You are getting " + freeLoaves + " free!");
       }
@@ -32,7 +36,7 @@ namespace Bakery.Items
         }
         else if (over < 2)
         {
-        Console.WriteLine("You are getting " + freeLoaves + " free! If you add one more loaf, you'll get another free.  Would you like more?");
+        Console.WriteLine("If you add one more loaf, you'll get another free.  Would you like more?");
         if (Console.ReadLine()=="yes") 
         {
           Console.WriteLine("Great! We'll add 2 loaves to your order, but you'll only be charged for one!");
