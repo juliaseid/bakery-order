@@ -19,12 +19,15 @@ namespace Bakery.Items
       if (Quantity == 0)
       {
         Console.WriteLine("No problem! You'll enjoy that bread, and you can always put jam on it if you wish you'd gotten pastries!");
+        total = 0;
+        return total;
       }
       else if (Quantity % 3 == 0)
       {
-        total = (Quantity * price) - (Quantity/3)
+        total = (Quantity * price) - (Quantity/3);
+        return total;
       }
-      else if (Quantity % 3 != 0)
+      else
       {
         int over = Quantity % 3;
         if (over >= 2)
@@ -34,20 +37,22 @@ namespace Bakery.Items
           {
             Console.WriteLine("Great! We'll add another pastry!");
             Quantity ++;
-            total = (Quantity * price) - (Quantity/3)   
+            total = (Quantity * price) - (Quantity/3);
+            return total;   
           }
           else if (Console.ReadLine()=="no")
           {
             Console.WriteLine("Ok, no problem! We'll keep your order as is.");
             total = (Quantity * price) - ((Quantity - over)/3);
+            return total;
           }
         }
-        else if (over < 2)
+        else
         {
           total = (Quantity * price) - ((Quantity - over)/3);
+          return total;
         }
       }
-      return total;
     }
   }
 }
