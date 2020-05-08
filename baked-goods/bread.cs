@@ -64,6 +64,7 @@ namespace Bakery.Items
           else 
           {
             Console.WriteLine("Sorry, we didn't understand!  Would you like to pay for one more loaf and get another free?  Please enter 'yes' or 'no'.");
+            response = Console.ReadLine();
             if (response=="yes")
             {
               Console.WriteLine("Great!  We'll add 2 loaves to your order, but you'll only be charged for one!");

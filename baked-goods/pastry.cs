@@ -31,13 +31,14 @@ namespace Bakery.Items
         if (over >= 2)
         {
           Console.WriteLine("Your next pastry is only $1! Would you like one more?");
-          if (Console.ReadLine()=="yes")
+          string response = Console.ReadLine();
+          if (response=="yes")
           {
             Console.WriteLine("Great! We'll add another pastry!");
             Quantity ++;
             total = (Quantity * price) - (Quantity/3);
           }
-          else if (Console.ReadLine()=="no")
+          else if (response=="no")
           {
             Console.WriteLine("Ok, no problem! We'll keep your order as is.");
             total = (Quantity * price) - ((Quantity - over)/3);
