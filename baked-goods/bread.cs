@@ -37,12 +37,13 @@ namespace Bakery.Items
         if (over >= 2) 
         {
           Console.WriteLine("You are getting " + freeLoaves + " loaf for free. You could get one more loaf free, too.  Would you like one more?");
-          if (Console.ReadLine()=="yes")
+          string response = Console.ReadLine();
+          if (response=="yes")
           {
             Console.WriteLine("You got it! One more loaf added!");
             AddLoaves(1);
           }
-          else if (Console.ReadLine()=="no")
+          else if (response=="no")
           {
             Console.WriteLine("No problem.  We'll stick with your original order.");
           }
@@ -50,19 +51,20 @@ namespace Bakery.Items
         else
         {
           Console.WriteLine("If you add one more loaf, you'll get another free.  Would you like more?");
-          if (Console.ReadLine()=="yes") 
+          string response = Console.ReadLine();
+          if (response=="yes") 
           {
             Console.WriteLine("Great! We'll add 2 loaves to your order, but you'll only be charged for one!");
             AddLoaves(2);
           }
-          else if (Console.ReadLine()=="no")
+          else if (response=="no")
           {
             Console.WriteLine("No problem!");
           } 
           else 
           {
             Console.WriteLine("Sorry, we didn't understand!  Would you like to pay for one more loaf and get another free?  Please enter 'yes' or 'no'.");
-            if (Console.ReadLine()=="yes")
+            if (response=="yes")
             {
               Console.WriteLine("Great!  We'll add 2 loaves to your order, but you'll only be charged for one!");
               AddLoaves(2);
