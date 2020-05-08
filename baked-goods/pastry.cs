@@ -47,6 +47,7 @@ namespace Bakery.Items
           total = (Quantity * price) - ((Quantity - over)/3);
         }
       }
+      return total;
     }
   }
 }
